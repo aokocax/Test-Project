@@ -10,7 +10,7 @@ namespace FBTest.Controllers
 {
     public class HomeController : Controller
     {
-        [FacebookAuthorize("email", "user_photos")]
+        [FacebookAuthorize("email", "user_photos","user_likes")]
         public async Task<ActionResult> Index(FacebookContext context)
         {
             if (ModelState.IsValid)
